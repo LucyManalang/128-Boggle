@@ -207,6 +207,7 @@ public class Boggle {
         maxScore.setCenter(WINDOW_WIDTH * 4/5, WINDOW_HEIGHT * 19/20);
         maxScore.setFillColor(Color.BLACK);
         canvas.add(maxScore);
+        System.out.println("All possible words:" + mainBoard.getSolvedBoard().toString());
     }
 
 
@@ -319,7 +320,6 @@ public class Boggle {
         uiGroup.add(setSeed);
         removeAllNonUIGraphicsObjects();
         mainBoard.solve();
-        System.out.println(mainBoard.getSolvedBoard().toString());
     }
 
     /**
